@@ -1,5 +1,5 @@
 {
-  "name": "node_test_server",
+  "name": "nodeserver",
   "version": "0.0.1",
   "author": "Tom Igoe",
   "dependencies": {
