@@ -1,13 +1,26 @@
 {
   "name": "node_test_server",
   "version": "0.0.1",
-  "author": {
-    "name": "Tom Igoe"
-  },
+  "author": "Tom Igoe",
   "dependencies": {
     "body-parser": "^1.16.0",
     "express": "^4.14.0",
     "multer": "^1.2.1",
     "ws": "^1.1.1"
-  }
+  },
+  "main": "getPostPutDelete.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://KCML@github.com/KCML/NodeServer.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KCML/NodeServer/issues"
+  },
+  "homepage": "https://github.com/KCML/NodeServer#readme",
+  "description": "nose project testing server"
 }
