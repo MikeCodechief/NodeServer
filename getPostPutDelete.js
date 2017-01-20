@@ -42,7 +42,7 @@ app.all('/*', function (request, response) {
 });
 
 // start the server:
-var server = app.listen(8080, serverStart);
+var server = app.listen(80, serverStart);
 
 // create a WebSocket server and attach it to the server
 var wss = new WebSocketServer({server: server});
