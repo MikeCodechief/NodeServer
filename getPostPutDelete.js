@@ -10,7 +10,7 @@
 var express = require('express');			// include express.js
 var app = express();						// a local instance of it
 var bodyParser = require('body-parser');	// include body-parser
-var WebSocketServer = require('ws').Server	// include Web Socket server
+var WebSocketServer = require('ws').Server;	// include Web Socket server
 
 // you need a  body parser:
 app.use(bodyParser.urlencoded({extended: false})); // for application/x-www-form-urlencoded
@@ -25,10 +25,11 @@ function serverStart() {
 app.all('/*', function (request, response) {
 	var date = new Date();
 	console.log('Got a ' + request.method + ' request' + ' at ' + date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds());
+	//console.log('Got a ' + request.method + ' request' + ' at ' + Date.now());
 	// the parameters of a GET request are passed in
 	// request.body. Pass that to formatResponse()
 	// for formatting:
-	console.log(request.headers);
+	//console.log(request.headers);
 	if (request.method == 'GET') {
 		console.log(request.query);
 	} else {
